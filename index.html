@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interactive-rating</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./interactive-rating-component-main/images/favicon-32x32.png">
+  </head>
+  <body>
+    <div class="card">
+      <div class="main-container">
+        <!-- Rating state start -->
+        <div class="rating-state">
+          <img
+            class="image"
+            src="./interactive-rating-component-main/images/icon-star.svg"
+            alt=""
+          />
+          <div class="header-1">
+            <h1>How did we do?</h1>
+          </div>
+          <div class="main-text">
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="numbers">
+            <span class="rating">1</span>
+            <span class="rating">2</span>
+            <span class="rating">3</span>
+            <span class="rating">4</span>
+            <span class="rating">5</span>
+          </div>
+          <button class="btn" type="submit">SUBMIT</button>
+        </div>
+        <!--Rating state ends here-->
+
+        <!--Thank you state starts here-->
+
+        <!-- Thank you state start -->
+        <section>
+          <aside class="thankyou-state hidden">
+            <img
+              src="./interactive-rating-component-main/images/illustration-thank-you.svg"
+              alt=""
+            />
+            <div class="selected">
+              <p>You selected <span id="rate"></span> out of 5</p>
+            </div>
+            <div class="thanks">
+              <h2>Thank you!</h2>
+            </div>
+            <div class="sub-text">
+              <p>
+                We appreciate you taking the time to give a rating. If you ever
+                need more support, don’t hesitate to get in touch!
+              </p>
+            </div>
+          </aside>
+        </section>
+        <!-- Thank you state end -->
+      </div>
+    </div>
+
+    <script src="./style.js"></script>
+  </body>
+</html>

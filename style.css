@@ -1,0 +1,131 @@
+@font-face {
+  font-family: myFont;
+  font-weight: 400;
+  src: url((https://fonts.google.com/specimen/Overpass));
+}
+
+@font-face {
+  font-family: myFontBold;
+  font-weight: 700;
+  src: url((https://fonts.google.com/specimen/Overpass));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  background: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  width: 375px;
+  border: none;
+  border-radius: 30px;
+  padding: 30px;
+  font-family: myFontBold;
+  font-size: 15px;
+}
+
+.rating-state {
+  display: grid;
+  gap: 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213, 19%, 18%);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.main-text{
+    color: hsl(217, 12%, 63%);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:hsl(213, 19%, 18%);
+  padding: 15px;
+  cursor: pointer;
+  color: hsl(216, 12%, 54%);
+}
+
+.rating:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn{
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+}
+
+.btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+
+.thankyou-state{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: myFont;
+    font-size: 15px;
+}
+
+.selected{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+
+.sub-text{
+color: hsl(217, 12%, 63%);
+text-align: center;
+font-size: 0.98rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    background-color: hsl(25, 97%, 53%);
+    color: white; 
+}
+
